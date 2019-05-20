@@ -1,0 +1,18 @@
+footer {
+    width: 99%;
+    bottom: 0;
+    position: absolute;
+    background-color: #777;
+    text-align: center;
+    color: white;
+}
+
+.imagem {
+    align-content: center;
+    background: url(imgs/gukhwa-jang-66917-unsplash.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+}
