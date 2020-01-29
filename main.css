@@ -1,18 +1,47 @@
 footer {
-    width: 99%;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    position: fixed;
+    left: 0;
     bottom: 0;
-    position: absolute;
-    background-color: #777;
-    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.774);
     color: white;
+    text-align: center;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+
+@keyframes flip-horizontal-bottom {
+    0% {
+        -webkit-transform: rotateX(0);
+        transform: rotateX(0);
+    }
+    100% {
+        -webkit-transform: rotateX(-180deg);
+        transform: rotateX(-180deg);
+    }
+}
+
+.flip-horizontal-bottom:hover {
+    -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 
 .imagem {
     align-content: center;
-    background: url(imgs/gukhwa-jang-66917-unsplash.jpg) no-repeat center center fixed; 
+    background: url(imgs/juskteez-vu-mwhklqGVzck-unsplash.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    
 }
