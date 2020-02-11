@@ -1,47 +1,80 @@
-footer {
-    padding-top: 1em;
-    padding-bottom: 1em;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.774);
-    color: white;
-    text-align: center;
+.bk {
+    margin-top: 13%;
+    margin-left: 2%;
+    background-color: rgba(145, 177, 177, 0.171);
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgba(165, 164, 164, 0.089);
+    border-width: 1px;
+    height: 2em;
+    width: 2em;
+    outline: 0;
 }
 
-@-webkit-keyframes flip-horizontal-bottom {
-    0% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-    }
-    100% {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
-    }
+a {
+    margin: 1.7em;
 }
 
-@keyframes flip-horizontal-bottom {
-    0% {
-        -webkit-transform: rotateX(0);
-        transform: rotateX(0);
-    }
-    100% {
-        -webkit-transform: rotateX(-180deg);
-        transform: rotateX(-180deg);
-    }
-}
-
-.flip-horizontal-bottom:hover {
-    -webkit-animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-    animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+.menu {
+    margin-top: 25%;
+    margin-left: 40%;
 }
 
 .imagem {
     align-content: center;
-    background: url(imgs/juskteez-vu-mwhklqGVzck-unsplash.jpg) no-repeat center center fixed;
+    background: url(imgs/matt-sclarandis-S_IV6KqGeso-unsplash.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+}
+
+.menu-bottons {
+    background-color: rgba(145, 177, 177, 0.171);
+    border-radius: 100%;
+    border-style: solid;
+    border-color: rgba(165, 164, 164, 0.089);
+    border-width: 1px;
+    height: 10em;
+    width: 10em;
+    outline: 0;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 15em;
+    background-color: rgba(0, 0, 0, 0.404);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    margin-left: 2em;
+    position: absolute;
+    z-index: 1;
+}
+
+.bk:hover .tooltip {
+    visibility: visible;
+}
+
+.menu-bottons:hover {
+    background-color: rgba(123, 253, 253, 0.568);
+}
+
+.bottom-to-top {
+    -webkit-animation: bottom-to-top 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation: bottom-to-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+@-webkit-keyframes bottom-to-top {
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+        opacity: 1;
+    }
 }
